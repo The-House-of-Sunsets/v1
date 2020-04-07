@@ -1,0 +1,13 @@
+#navStyle {
+    padding:20px 0 ;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:99;
+}
+#navMenu {
+    color: white;
+    font-size:36px;
+    font-weight:bold;
+    padding:20px 30px;
+}

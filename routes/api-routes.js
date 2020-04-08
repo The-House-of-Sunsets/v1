@@ -3,7 +3,9 @@ var router = express.Router();
 var links = require('./links');
 /* GET home page. */
 router.get('/v1_0/links', function(req, res, next) {
-    return res.json(links);
+    let newLinks = JSON.stringify(links);
+    console.log("ooo: " + newLinks );
+    res.send(links);
     //   res.render('index', { title: 'Express' });
 });
 

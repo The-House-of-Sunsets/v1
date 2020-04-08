@@ -8,22 +8,32 @@ class Home extends Component {
     constructor() {
         super()
         this.state = {
-          links: []
+          links: null
         }
-      }
+    }
     componentDidMount() {
-        this.getLinks();
+        this.getLinks()
+        .then(res => {console.log("letsgo: " + JSON.stringify(res));
+            this.setState({links: res})})
+        .catch(err => console.log(err))
     }
-    getLinks = () => {
-        fetch("/api/v1_0/links", {
-            method: "GET",
-        }).then((res) => {
-            console.log(res)
-            this.setState({links: res})
-        })
+    async getLinks() {
+        const response =  await fetch("/api/v1_0/links")
+        const body = await response.json();
+        if(response.status !== 200) {
+            throw Error(body.message)
+        }
+        console.log(body)
+        return body;
     }
-    render() {
-        console.log("blah: " + this.state.links)
+    openNav() {
+        
+    }
+    render() { 
+        let data = this.state.links || "no links here."
+
+        {this.state.links && console.log(data )}
+
         let style = {
             "backgroundImage": `url(${backgroundImage})`,
             "backgroundPosition": "center",
@@ -75,7 +85,7 @@ class Home extends Component {
                     - Footer
                     - Contact
                 */}
-                <Navigation links={this.state.links} /> 
+                <Navigation links={data} /> 
                 <div style={masterContainer}>
                     <div id="imageOverlay" style={bgImageOverlay}></div>
                     <main id="mainContent" style={mainContent}>

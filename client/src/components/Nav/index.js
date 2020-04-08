@@ -8,7 +8,7 @@ const Navigation = (props) => {
     <>
       <div id="navStyle">
         <div>
-          <span id="navMenu" class="oi oi-sun"></span>
+          <span id="navMenu" className="oi oi-sun"></span>
         </div>
       </div>
       <NavMenu links={props.links} />

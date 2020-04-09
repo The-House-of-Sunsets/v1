@@ -23,17 +23,12 @@ class Home extends Component {
         if(response.status !== 200) {
             throw Error(body.message)
         }
-        console.log(body)
         return body;
-    }
-    openNav() {
-        
     }
     render() { 
         let data = this.state.links || "no links here."
-
-        {this.state.links && console.log(data )}
-
+        console.log("Begin \n ------")
+        console.log(data);
         let style = {
             "backgroundImage": `url(${backgroundImage})`,
             "backgroundPosition": "center",

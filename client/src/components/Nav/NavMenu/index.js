@@ -1,23 +1,20 @@
-import React from 'react'
+import React, {Component} from 'react'
 import './style.css'
 // const arr = [{name:"1", link:"google.com"},"2","3"]
 const NavMenu = (props) => {
     let links = props.links;
-       [links].forEach((child, index) => {
-           let ul = document.querySelector("div ul")
-           if (ul) {
-               links.forEach(child => 
-                {
-                    // return <li>{child.name}</li>
-                    ul.appendChild(document.createElement("li")).innerHTML = `<a href='${child.link}'>${child.name}</a>`;
-                })
-           }
-       })
-
+    let ul = document.querySelectorAll("ul")
+    const items = [];
+    [...links].forEach((child, i) => 
+        items.push(
+            <li key={i}><a href={child.link}>{child.name}</a></li>
+    ))
     return (
         <>
-            <div id="navMenuStyle">
-                <ul></ul>
+            <div id="navMenuStyle" className={props.isOpen && "showNav" || "hideNav"}>
+                <ul>
+                    {items}
+                </ul>
             </div>
         </>
     )

@@ -1,22 +1,22 @@
 module.exports = [
   {
-    name:"NavItem",
+    name:"NavItem1",
     link:"https://www.google.com"
   },
   {
-    name:"NavItem",
+    name:"NavItem2",
     link:"https://www.google.com"
   },
   {
-    name:"NavItem",
+    name:"NavItem3",
     link:"https://www.google.com"
   },
   {
-    name:"NavItem",
+    name:"NavItem4",
     link:"https://www.google.com"
   },
   {
-    name:"NavItem",
+    name:"NavItem5",
     link:"https://www.google.com"
   }
 ];

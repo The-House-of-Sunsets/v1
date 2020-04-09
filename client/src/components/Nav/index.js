@@ -8,10 +8,10 @@ const Navigation = (props) => {
     <>
       <div id="navStyle">
         <div>
-          <span id="navMenu" className="oi oi-sun"></span>
+          <a id="navLink" onClick={toggle} href="javascript:void(0)"><span id="navMenu" className="oi oi-sun"></span></a>
         </div>
       </div>
-      <NavMenu links={props.links} />
+      <NavMenu links={props.links} isOpen={isOpen}/>
     </>
   );
 }

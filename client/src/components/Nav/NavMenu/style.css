@@ -24,3 +24,5 @@
 #navMenuStyle ul li a:hover {
     text-decoration: underline;
 }
+.showNav {display:block}
+.hideNav {display:none}

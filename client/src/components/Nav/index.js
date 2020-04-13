@@ -3,12 +3,12 @@ import NavMenu from './NavMenu'
 import './style.css'
 const Navigation = (props) => {
   const [isOpen, setIsOpen] = useState(false);
-  const toggle = () => setIsOpen(!isOpen);
+  const toggle = () => setIsOpen(!isOpen)
   return (
     <>
       <div id="navStyle">
         <div>
-          <a id="navLink" onClick={toggle} href="javascript:void(0)"><span id="navMenu" className="oi oi-sun"></span></a>
+          <a id="navLink" onClick={toggle} href="javascript:void(0)"><span id="navMenu" className={`navIcon ${!isOpen ? "oi oi-sun" : "openIt oi oi-moon"}`}></span></a>
         </div>
       </div>
       <NavMenu links={props.links} isOpen={isOpen}/>

@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import YouTube from 'react-youtube';
+import './style.css'
 class VideoPlayer extends Component {
     render() {
         const opts = {
@@ -7,23 +8,19 @@ class VideoPlayer extends Component {
             width: '640',
             playerVars: {
                 // https://developers.google.com/youtube/player_parameters
-                autoplay: 1,
+                autoplay: 0,
             },
         };
-        let videoPlayerStyle = {
-            "textAlign":"center",
-            "width":"100%",
-            "margin":"30px auto"
-        }
         return (
-            <div style={videoPlayerStyle}>
-                <YouTube videoId = "9GWWu34VhJs"
+            <div className="videoPlayerStyle">
+                <YouTube videoId = "w3nH0uEHh7Y"
                     opts = {
                         opts
                     }
                     onReady = {
                         this._onReady
                     }
+                    className={"videoStyle"}
                 />
             </div>
         )

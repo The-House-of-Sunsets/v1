@@ -1,7 +1,8 @@
 import React from 'react'
-import hosLogo from './house-of-sunsets-logo.png'
 import HeaderText from './HeaderText'
 import SubHeaderText from './HeaderSubText'
+import Image from '../Image'
+import './style.css'
 let h1Style = {
     "color": "#fff",
     "text-align": "center"
@@ -12,14 +13,14 @@ let headerDivStyle = {
     "textAlign":"center"
 }
 const Header = (props) => {
+    const {text, subtext, children, image} = props;
     return (
         <>
-            <div id="hos-header" style={headerDivStyle}>
+            <div id="hos-header" className="headerDivStyle">
                 
-                <img src={hosLogo} height="auto" width="35%" alt="The House of Sunsets Logo" />
-                {/*<h1 style={h1Style}>House of Sunsets</h1>*/}
-                <HeaderText text={props.text} />
-                <SubHeaderText text={props.subtext} />
+                {image ? children : ""}
+                <HeaderText text={text} />
+                <SubHeaderText text={subtext} />
             </div>
         </>
     )

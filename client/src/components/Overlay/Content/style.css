@@ -1,4 +1,4 @@
-#navMenuStyle {
+.overlay {
     height: 100vh;
     width:100vw;
     background-color:rgba(0,0,0,0.8);
@@ -7,22 +7,30 @@
     left: 0;
     z-index: 98;
 }
-#navMenuStyle ul {
+.overlay ul {
     text-align: center;
     color: white;
     font-size: 36px;
     margin-top: 15%;
     line-height: 2em;
 }
-#navMenuStyle ul li {
+.overlay ul li {
     list-style: none;
 }
-#navMenuStyle ul li a {
+.overlay ul li a {
     color: white;
     text-decoration: none;
 }
-#navMenuStyle ul li a:hover {
+.overlay ul li a:hover {
     text-decoration: underline;
 }
-.showNav {opacity:100%; transition: opacity 2s; visibility:visible; }
-.hideNav {opacity:0; transition: opacity 2s, visibility 2s; visibility: hidden; }
+.showNav {
+    opacity:100%;
+    transition: opacity 2s;
+    visibility:visible;
+}
+.hideNav {
+    opacity:0;
+    transition: opacity 2s, visibility 2s;
+    visibility: hidden; 
+}

@@ -1,9 +1,8 @@
-import React, {Component} from 'react'
+import React from 'react'
 import './style.css'
 // const arr = [{name:"1", link:"google.com"},"2","3"]
 const NavMenu = (props) => {
     let links = props.links;
-    let ul = document.querySelectorAll("ul")
     const items = [];
     [...links].forEach((child, i) => 
         items.push(

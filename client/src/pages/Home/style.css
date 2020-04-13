@@ -1,0 +1,28 @@
+#headerBottomRow {
+    width:100%;
+    text-align:center;
+}
+#goDownLink {
+    color:#000;
+    font-size:60px;
+    font-weight:300
+}
+.btnInline {
+    display: inline-block;
+    width: 50px;
+    margin:0 20px;
+}
+.countdownTimer {
+    width:100%;
+    text-align:center;
+    margin:15px auto;
+    
+}
+.countdownTimer span {
+    width: 100%;
+    color: black;
+    font-size: 40px;
+    font-weight: bold;
+    background-color:white;
+    padding:20px;
+}

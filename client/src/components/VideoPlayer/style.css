@@ -1,0 +1,6 @@
+.videoStyle { box-shadow: 0px 0px 12px 5px orange }
+.videoPlayerStyle {
+    text-align:center;
+    width:100%;
+    margin:30px auto;
+}

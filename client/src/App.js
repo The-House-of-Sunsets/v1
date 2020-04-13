@@ -1,12 +1,12 @@
 import React from 'react';
-import Home from './pages/Home'
+import Index from './pages/Index'
 import './App.css';
 
 
 function App() {
   return (
     <>
-      <Home />
+      <Index />
     </>  );
 }
 

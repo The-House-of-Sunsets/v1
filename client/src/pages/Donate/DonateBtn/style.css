@@ -1,0 +1,19 @@
+.donate {
+    z-index: 1000;
+    position: absolute;
+    right: 30px;
+    top: 35px;
+    animation: shadow-pulse .7s infinite;
+}
+.donate:hover {
+    animation:none;
+}
+@keyframes shadow-pulse
+{
+     0% {
+          box-shadow: 0 0 0 0px rgba(255, 204, 0, 0);
+     }
+     100% {
+          box-shadow: 0 0 0 5px rgba(255,204,0,.5);
+     }
+}

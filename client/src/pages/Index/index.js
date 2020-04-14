@@ -2,11 +2,12 @@ import React, {Component} from 'react'
 import {Container} from 'reactstrap'
 //components
 import Navigation from "../../components/Nav"
+import Footer from '../../components/Footer'
 //pages
 import DonateBtn from '../Donate/DonateBtn'
 import Home from '../Home'
-import Donate from '../Donate'
 //images
+import backgroundImage from '../../images/house-of-sunsets-sunset.jpg'
 import './style.css'
 class Index extends Component {
     constructor() {
@@ -31,17 +32,25 @@ class Index extends Component {
     }
     render() {
         let data = this.state.links || "no links here."
-        
+        let style = {
+            "backgroundImage": `url(${backgroundImage})`
+        }
         return(
             <>
-                <div id="masterContainer">
+                <div id="masterContainer" style={style}>
+                    <div id="bgOverlay"></div>
+                </div>
+                <div id="mainContainer">
                     <Container>
+                        <main id="mainContent">
+                            <Home />
+                        </main>
                         <Navigation links={data} /> 
                         <DonateBtn />
-                            <main id="mainContent">
-                                    <Home />
-                            </main>
                     </Container>
+                    <footer>
+                        <Footer/>
+                    </footer>
                 </div>
             </>
         )

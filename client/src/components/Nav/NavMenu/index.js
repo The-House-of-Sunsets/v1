@@ -1,5 +1,4 @@
 import React from 'react'
-import './style.css'
 // const arr = [{name:"1", link:"google.com"},"2","3"]
 const NavMenu = (props) => {
     let links = props.links;

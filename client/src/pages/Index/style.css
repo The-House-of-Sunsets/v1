@@ -1,10 +1,5 @@
 /* #masterContainer: Contains all content on the page*/
 #masterContainer {
-    height:auto;
-    width:100%;
-}
-/* .containerStyle: Holds all the grid structure on the page */
-.containerStyle { 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -13,16 +8,23 @@
     max-width:100vw;
     max-height:100vh;
 }
+/* .containerStyle: Holds all the grid structure on the page */
+.container{ 
+    margin:0 auto;
+}
 /* #mainContent: Holds all the content in the container*/
-#mainContent {
+#mainContainer {
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
+    width:100%;
+    top:0;
+    left:0;
+    text-align:center;
+    z-index:2;
+    
 }
 .masterContent {
-    position: absolute;
-    z-index:2;
+    /* position: absolute;
+    z-index:2; */
 }
 #bgOverlay {
     height:100vh;

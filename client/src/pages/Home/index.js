@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {Col, Row, Container} from 'reactstrap'
+import {Col, Row} from 'reactstrap'
 import Countdown from 'react-countdown';
 //pages
 //components
@@ -9,15 +9,11 @@ import Image from '../../components/Image'
 import Button from '../../components/Button'
 //images
 import hosLogo from '../../images/house-of-sunsets-logo.png'
-import backgroundImage from '../../images/house-of-sunsets-sunset.jpg'
 
 //styles
 import './style.css'
 class Home extends Component {
     render() { 
-        let style = {
-            "backgroundImage": `url(${backgroundImage})`
-        }
         return (
             <>
                 {/*
@@ -35,11 +31,11 @@ class Home extends Component {
                     - Footer
                     - Contact
                 */}
-                <div className="masterContent containerStyle" style={style}>
+                <div className="masterContent containerStyle">
                     <Row>
-                        <Col md="12">
+                        <Col md={12}>
                             <Header 
-                                text="Where the beauty of sunsets and music reside"
+                                text="Livestreaming the best sunsets and local musical talent"
                                 subtext="Next Up: Sean Til Dawn (4/17)" 
                                 image>
                                 <Image src={hosLogo} height="auto" width="20%" alt="The House of Sunsets Logo" />
@@ -47,26 +43,25 @@ class Home extends Component {
                         </Col>
                     </Row>
                     <Row>
-                        {/* Countdown Timer */}
-                        <div className="countdownTimer">
-                            <Countdown date={"2020-04-17T18:00:00"} />
-                        </div>
+                        <Col md={12}>
+                            <div className="countdownTimer">
+                                <Countdown date={"2020-04-17T18:00:00"} />
+                            </div>
+                        </Col>
                     </Row>
                     <Row>
-                        <Col md="12">
+                        <Col md={12}>
                             <VideoPlayer className="videoClass"/>
                         </Col>
                     </Row>
                     <Row>
-                        <Col md="12">
+                        <Col md={12}>
                             <div id="headerBottomRow">
-                                {/* Share Button */}
                                 <Button btnColor="secondary"><span className='oi oi-share'></span> Share Stream</Button>
                             </div>
                         </Col>
                     </Row>
                 </div>
-                <div id="bgOverlay"></div>
             </>
         )
     }

@@ -32,21 +32,20 @@ class Home extends Component {
                     - Contact
                 */}
                 <div className="masterContent containerStyle">
+                    
                     <Row>
                         <Col md={12}>
-                            <Header 
-                                text="Livestreaming the best sunsets and local musical talent"
-                                subtext="Next Up: Sean Til Dawn (4/17)" 
-                                image>
-                                <Image src={hosLogo} height="auto" width="20%" alt="The House of Sunsets Logo" />
-                            </Header>
-                        </Col>
-                    </Row>
-                    <Row>
-                        <Col md={12}>
+                            <Image src={hosLogo} height="auto" width="20%" alt="The House of Sunsets Logo" />
+                            <h4 className="curly white">
+                                <strong>Next Sunset:</strong></h4>
                             <div className="countdownTimer">
                                 <Countdown date={"2020-04-17T18:00:00"} />
                             </div>
+                            <Header 
+                                text="Sean Til Dawn"
+                                subtext="Friday, April 17 at 6pm til Dark" 
+                                image>
+                            </Header>
                         </Col>
                     </Row>
                     <Row>

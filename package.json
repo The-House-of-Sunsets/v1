@@ -3,15 +3,20 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www",
-    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+    "client-install": "npm install --prefix client",
+    "start": "concurrently \"node ./bin/www\"",
+    "server": "nodemon index.js",    
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client"
   },
   "dependencies": {
-    "cookie-parser": "^1.4.5",
+    "cookie-parser": "^1.4.5", 
     "debug": "^2.6.9",
     "express": "^4.16.4",
     "morgan": "^1.9.1"
   },
+  
   "devDependencies": {
     "concurrently": "^5.1.0"
   }

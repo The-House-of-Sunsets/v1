@@ -41,7 +41,7 @@ class Index extends Component {
                     <div id="bgOverlay"></div>
                 </div>
                 <div id="mainContainer">
-                    <Container>
+                     <Container>
                         <main id="mainContent">
                             <Home />
                         </main>

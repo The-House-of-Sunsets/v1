@@ -11,12 +11,9 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-// if (process.env.NODE_ENV === 'production') {
-	app.use(express.static('client/build'));
-// }
-app.get('*', (request, response) => {
-	response.sendFile(path.join(__dirname, 'client/build/index.html'));
-});
+if (process.env.NODE_ENV === 'production') {
+	app.use(express.static('/client/build'));
+}
 app.use('/api', apiRouter);
 
 module.exports = app;

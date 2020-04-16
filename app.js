@@ -11,8 +11,9 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'client/build')));
-
+if (process.env.NODE_ENV === 'production') {
+	app.use(express.static('client/build'));
+}
 app.use('/api', apiRouter);
 
 module.exports = app;

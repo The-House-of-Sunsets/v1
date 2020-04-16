@@ -7,7 +7,7 @@
     "start": "concurrently \"node ./bin/www\" \"npm run client\"",
     "server": "nodemon app.js",    
     "client": "npm start --prefix client",
-    "dev": "concurrently \"npm index.js\" \"npm run client\"",
+    "dev": "concurrently \"npm index.js\" \"npm run client\""
   },
   "dependencies": {
     "cookie-parser": "^1.4.5",
@@ -19,6 +19,5 @@
   },
   "devDependencies": {
     "concurrently": "^5.1.0"
- 
   }
 }

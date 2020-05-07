@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Ofier",
+        "date": "05/02/20",
+        "vid":"6KrNZH8gqFk",
+        "img": "images/050220-ofier-thumb.png",
+        "alt": "Ofier - House of Sunsets",
+        "desc":"Ofier"
+    },
+    {
+        "name": "Chrysocolla",
+        "date": "05/01/20",
+        "vid":"rmDimb6NZYI",
+        "img": "images/050120-chrysocolla-thumb.png",
+        "alt": "Chrysocolla - House of Sunsets",
+        "desc":"Chrysocolla"
+    },
+    {
+        "name": "Sean til Dawn w/HIM",
+        "date": "04/25/20",
+        "vid":"RY8xBrOeXr4",
+        "img": "images/sean-til-dawn-w-him.png",
+        "alt": "Sean til Dawn (w/ HIM) - House of Sunsets",
+        "desc":"Sean til Dawn w/ HIM"
+    },
+    {
+        "name": "HIM",
+        "date": "04/24/20",
+        "vid":"xOhpnU2_MxM",
+        "img": "images/him-4-24-20-house-of-sunsets.png",
+        "alt": "HIM - House of Sunsets",
+        "desc":"HIM"
+    },
+    {
+        "name": "Sean til Dawn",
+        "date": "04/17/20",
+        "vid":"sA4SruC4634",
+        "img": "images/sean-til-dawn-41720-thumb.png",
+        "alt": "Sean til Dawn - House of Sunsets",
+        "desc":"Sean til Dawn"
+    }
+]

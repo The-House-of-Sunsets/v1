@@ -7,31 +7,46 @@ import Footer from '../../components/Footer'
 import DonateBtn from '../Donate/DonateBtn'
 import Home from '../Home'
 //images
-import backgroundImage from '../../images/house-of-sunsets-sunset.jpg'
+import backgroundImage from './house-of-sunsets-sunset.jpg'
 import './style.css'
 class Index extends Component {
     constructor() {
         super()
         this.state = {
-          links: null
+          links: [{
+            "link":"#sun-sets",
+            "name":"Sun Sets"
+
+        },{
+            "link":"#artists",
+            "name":"Artists"
+
+        }]
         }
     }
     componentDidMount() {
-        this.getLinks()
-        .then(res => {JSON.stringify(res);
-            this.setState({links: res})})
-        .catch(err => console.log(err))
+        // this.getLinks()
+        
+        // .then(res => {JSON.stringify(res)
+        //     console.log(res)
+        //     this.setState({links: res})})
+        // .catch(err => console.log(err))
     }
-    async getLinks() {
-        const response =  await fetch("/api/v1_0/links")
-        const body = await response.json();
-        if(response.status !== 200) {
-            throw Error(body.message)
-        }
-        return body;
+    getLinks = () => {
+        
     }
+    // async getLinks() {
+    //     const response =  await fetch("/api/v1_0/links")
+    //     const body = await response.json();
+    //     if(response.status !== 200) {
+    //         throw Error(body.message)
+    //     }
+    //     console.log("I have links",body)
+    //     return body;
+
+    // }
     render() {
-        let data = this.state.links || "no links here."
+        let data = this.state.links
         let style = {
             "backgroundImage": `url(${backgroundImage})`
         }
@@ -45,8 +60,8 @@ class Index extends Component {
                         <main id="mainContent">
                             <Home />
                         </main>
-                        <Navigation links={data} /> 
-                        <DonateBtn />
+                        {/* <Navigation links={data} /> 
+                        <DonateBtn /> */}
                     </Container>
                     <footer>
                         <Footer/>

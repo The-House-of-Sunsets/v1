@@ -1,0 +1,16 @@
+.item {
+    color:white;
+    order:5;
+    width:auto;
+    height:auto;
+    border: 3px solid white;
+    margin:auto;
+}
+.flex-container {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+.sunSet:hover {
+    cursor: pointer;
+}

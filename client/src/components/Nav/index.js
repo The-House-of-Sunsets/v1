@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import NavMenu from './NavMenu'
 import './style.css'
 const Navigation = (props) => {
+  console.log(props.links)
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen)
   return (

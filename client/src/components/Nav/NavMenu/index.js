@@ -3,10 +3,12 @@ import React from 'react'
 const NavMenu = (props) => {
     let links = props.links;
     const items = [];
-    [...links].forEach((child, i) => 
+    [...links].forEach((child, i) => {
+        console.log(child)
+        
         items.push(
             <li key={i}><a href={child.link}>{child.name}</a></li>
-    ))
+        )})
     return (
         <>
             <div id="navMenuStyle" className={props.isOpen && "showNav" || "hideNav"}>

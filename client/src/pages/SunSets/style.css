@@ -1,0 +1,32 @@
+.item {
+    color:white;
+    order:5;
+    width:auto;
+    height:auto;
+    border: 3px solid white;
+    margin:auto;
+}
+.flex-container {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+.sunSet:hover {
+    cursor: pointer;
+}
+.videoStyle { box-shadow: 0px 0px 12px 5px orange }
+.videoPlayerStyle {
+    text-align:center;
+    width:100%;
+    margin:30px auto;
+    position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+.videoPlayerStyle iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }

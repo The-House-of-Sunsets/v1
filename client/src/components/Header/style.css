@@ -1,13 +1,14 @@
 .headerDivStyle {
     width:100%;
-    margin:30px auto 0 auto;
+    margin:30px auto;
     text-align:center
 }
 .headerTextStyle {
     color:#ffffff;
     text-align:center;
     margin: -4px auto 20px auto;
-    font-size: 2em;
+    font-weight: bold;
+    font-size: 3em;
 }
 .subHeaderStyle {
     color:#ffffff;

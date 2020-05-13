@@ -14,16 +14,18 @@ import CountdownTimer from '../../components/Countdown'
 //styles
 import './style.css'
 import Calendar from '../../components/Calendar'
+import artists from '../SunSets/sunsets.json' 
+
 class Home extends Component {
     constructor() {
         super()
         this.state = {
-            videoID: '2QqYowYtsrI',
+            videoID: '',
             hasVideo: false
         }
     }
-    
     render() { 
+        let featureVid = artists.filter((item) => {return item.featured})
         return (
             <>
                 {/*
@@ -58,7 +60,7 @@ class Home extends Component {
                     <Row>
                         <Calendar/>
                     </Row>
-                    <Sunsets videoID={this.state.videoID} hasVideo={this.state.hasVideo}/>
+                    <Sunsets  videoID={featureVid[0].vid} hasVideo={this.state.hasVideo}/>
                     {/* <Artists/> */}
                 </div>
             </>

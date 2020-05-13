@@ -4,17 +4,17 @@ const Calendar = () => {
     return (
         <>
             <div id="eventCal" className="">
-                <h3 id="monthHeader" className="curly">May</h3>
+                <h2 id="monthHeader" className="curly">May</h2>
                 <div id="eventList" className="container">
                     <div className="lineup">
-                        <div className="date">05/08/20</div>
-                        <div className="artist">DGTL CRL</div>
-                        <div className="genre">Nextwave</div>
+                        <div className="dateName">Friday</div>
+                        <div className="date">05/15/20</div>
+                        <div className="artist">Flip Mode</div>
                     </div>
                     <div className="lineup">
-                        <div className="date">05/09/20</div>
-                        <div className="artist">Don Santino</div>
-                        <div className="genre">House</div>
+                        <div className="dateName">Saturday</div>
+                        <div className="date">05/16/20</div>
+                        <div className="artist">Miguel Rios</div>
                     </div>
                 </div>
             </div>

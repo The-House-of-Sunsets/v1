@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import {Container, Row, Col} from 'reactstrap'
 import Image from '../../components/Image'
+import artists from './artsists.json'
 class Artist extends Component {
     constructor(props) {
         super(props)
@@ -10,18 +11,7 @@ class Artist extends Component {
     }
     componentDidMount() {
         this.setState({
-            artists: [
-                {
-                    "name":"HIM",
-                    "image":"https://scontent-lax3-2.xx.fbcdn.net/v/t1.0-9/41199879_989252351247790_6648275436205768704_o.jpg?_nc_cat=111&_nc_sid=85a577&_nc_ohc=XiHlgkdhjdUAX964K2y&_nc_ht=scontent-lax3-2.xx&oh=bafaf202eaa21e25fa146ed354a98202&oe=5ED3EFD0",
-                    "hometown":"hometown",
-                    "bio":"bio",
-                    "genre":"genre",
-                    "soundcloud":"soundcloud",
-                    "instagram":"instagram"
-
-                }
-            ]
+            artists: artists
         }, console.log(this.state.artists))
     }
     render() {
@@ -32,29 +22,34 @@ class Artist extends Component {
                     <Col>
                         <h2 className="white">Artists</h2>
                         {this.state.artists.map(artist => 
-                            <Row>
-                                <Col>
-                                    {/* Profile Pic */}
-                                    <Image src={artist.image} height={250} width={250} alt={`${artist.name} on the House of Sunsets`} />
-                                    {/* Artist Name */}
-                                    <h2 className="artistName white">{artist.name}</h2>
-                                </Col>
-                                <Col className="text-left white">
-                                    {/* Profile Info*/}
-                                        {/* Name */}
-                                        <p><strong>Name:</strong> {artist.name}</p>
-                                        {/* Bio */}
-                                        <p><strong>Bio:</strong> {artist.bio}</p>
-                                        {/* Hometown */}
-                                        <p><strong>Hometown:</strong> {artist.hometown}</p>
-                                        {/* Genre */}
-                                        <p><strong>Genre:</strong> {artist.genre}</p>
-                                        {/* Soundcloud */}
-                                        <p><strong>Soundcloud:</strong> {artist.soundcloud}</p>
-                                        {/* Instagram */}
-                                        <p><strong>Instagram:</strong> {artist.instagram}</p>
-                                </Col>
-                            </Row>
+                            <div className="artistDiv">
+                                <Row>
+                                    <Col sm={6} md={3}>
+                                        {/* Profile Pic */}
+                                        <Image src={artist.image} height={250} width={250} alt={`${artist.name} on the House of Sunsets`} />
+                                        {/* Artist Name */}
+                                        <h2 className="artistName white">{artist.name}</h2>
+                                    </Col>
+                                    <Col sm={4} md={3} className="text-left white">
+                                        {/* Profile Info*/}
+                                            {/* Name */}
+                                            <p><strong>Name:</strong> {artist.name}</p>
+                                            {/* Bio */}
+                                            <p><strong>Bio:</strong> {artist.bio}</p>
+                                            {/* Hometown */}
+                                            <p><strong>Hometown:</strong> {artist.hometown}</p>
+                                            {/* Genre */}
+                                            <p><strong>Genre:</strong> {artist.genre}</p>
+                                            {/* Soundcloud */}
+                                            <p><strong>Soundcloud:</strong> {artist.soundcloud}</p>
+                                            {/* Instagram */}
+                                            <p><strong>Instagram:</strong> {artist.instagram}</p>
+                                    </Col>
+                                    <Col sm={4} md={6}>
+                                        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src={`https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/${artist.SC_ID}&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true`}></iframe>
+                                    </Col>
+                                </Row>
+                            </div>
                         )}
                     </Col>
                 </Row>

@@ -4,7 +4,7 @@
     width:auto;
     height:auto;
     border: 3px solid white;
-    margin:auto;
+    margin: 5px auto;
 }
 .flex-container {
     display:flex;
@@ -14,14 +14,16 @@
 .sunSet:hover {
     cursor: pointer;
 }
-.videoStyle { box-shadow: 0px 0px 12px 5px orange }
+.videoStyle { 
+    box-shadow: 0px 0px 12px 5px orange 
+}
 .videoPlayerStyle {
     text-align:center;
     width:100%;
     margin:30px auto;
     position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  height: 0;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
 }
 .videoPlayerStyle iframe {
     position: absolute;
@@ -29,4 +31,12 @@
     left: 0;
     width: 100%;
     height: 100%;
+  }
+  h2.sunsets {
+      text-align: center;
+       margin: 0 auto;
+  }
+  .center {
+      margin: 0 auto;
+      text-align: center;
   }

@@ -21,10 +21,6 @@
     text-align:center;
     z-index:2;
 }
-.masterContent {
-    /* position: absolute;
-    z-index:2; */
-}
 #bgOverlay {
     height:100vh;
     width:100vw;

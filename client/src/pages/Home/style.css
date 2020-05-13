@@ -1,3 +1,8 @@
+h2 {
+    font-size:3em;
+    font-weight:bold;
+    text-decoration: underline;
+}
 #headerBottomRow {
     width:100%;
     text-align:center;

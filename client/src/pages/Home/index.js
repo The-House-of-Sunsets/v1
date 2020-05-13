@@ -18,7 +18,7 @@ class Home extends Component {
     constructor() {
         super()
         this.state = {
-            videoID: '6KrNZH8gqFk',
+            videoID: '2QqYowYtsrI',
             hasVideo: false
         }
     }
@@ -49,8 +49,8 @@ class Home extends Component {
                                 <strong>Next Sunset:</strong></h4>
                             <CountdownTimer />
                             <Header 
-                                text="DGTL CLR"
-                                subtext="Friday, May 8 at 630pm til Dark" 
+                                text="Flip Mode"
+                                subtext="Friday, May 15  at 630pm til Dark" 
                                 image>
                             </Header>
                         </Col>

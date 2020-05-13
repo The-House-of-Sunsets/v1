@@ -1,11 +1,30 @@
 [
     {
+        "name": "Don Santino",
+        "date": "05/09/20",
+        "vid":"VPxUwSHi3d8",
+        "img": "images/050920-don_santino.png",
+        "alt": "Don Santino - House of Sunsets",
+        "desc":"Don Santino",
+        "sunset": true
+    },
+    {
+        "name": "DGTL CLR",
+        "date": "05/08/20",
+        "vid":"2QqYowYtsrI",
+        "img": "images/dgtl_clr-050820.png",
+        "alt": "DGTL CLR - House of Sunsets",
+        "desc":"DGTL CLR",
+        "sunset": true
+    },
+    {
         "name": "Ofier",
         "date": "05/02/20",
         "vid":"6KrNZH8gqFk",
         "img": "images/050220-ofier-thumb.png",
         "alt": "Ofier - House of Sunsets",
-        "desc":"Ofier"
+        "desc":"Ofier",
+        "sunset": true
     },
     {
         "name": "Chrysocolla",
@@ -13,7 +32,8 @@
         "vid":"rmDimb6NZYI",
         "img": "images/050120-chrysocolla-thumb.png",
         "alt": "Chrysocolla - House of Sunsets",
-        "desc":"Chrysocolla"
+        "desc":"Chrysocolla",
+        "sunset": false
     },
     {
         "name": "Sean til Dawn w/HIM",
@@ -21,7 +41,8 @@
         "vid":"RY8xBrOeXr4",
         "img": "images/sean-til-dawn-w-him.png",
         "alt": "Sean til Dawn (w/ HIM) - House of Sunsets",
-        "desc":"Sean til Dawn w/ HIM"
+        "desc":"Sean til Dawn w/ HIM",
+        "sunset": false
     },
     {
         "name": "HIM",
@@ -29,7 +50,8 @@
         "vid":"xOhpnU2_MxM",
         "img": "images/him-4-24-20-house-of-sunsets.png",
         "alt": "HIM - House of Sunsets",
-        "desc":"HIM"
+        "desc":"HIM",
+        "sunset": true
     },
     {
         "name": "Sean til Dawn",
@@ -37,6 +59,7 @@
         "vid":"sA4SruC4634",
         "img": "images/sean-til-dawn-41720-thumb.png",
         "alt": "Sean til Dawn - House of Sunsets",
-        "desc":"Sean til Dawn"
+        "desc":"Sean til Dawn",
+        "sunset": true
     }
 ]

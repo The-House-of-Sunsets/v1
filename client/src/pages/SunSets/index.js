@@ -21,8 +21,13 @@ class Sunsets extends Component {
     
     render() {
         let goingLive = false;
+        let afterSunset = artists.filter((item,i) => !item.sunset)
+        let sunsets = artists.filter((item,i) => item.sunset)
         return (
             <>
+                <Row>
+                    <h2 class="sunsets white curly">Latest Sunset</h2>
+                </Row>
                 <Row>
                     <Col md={12}>
                         {this.state.videoID !== '' && <div className="videoPlayerStyle">
@@ -34,10 +39,11 @@ class Sunsets extends Component {
                 <Row>
                     <Col md={12}>
                         <h3 className="white">
-                            Sunsets
+                            Past Sunsets
                         </h3>
+                        <p class="center white">(Click to View Video)</p>
                         <div className="flex-container">
-                            {artists.map((item,i) => 
+                            {sunsets.map((item,i) => 
                                 <div className="item sunset" key={i}>
                                     <a className="sunSet dark" onClick={() => this.handleSunsetClick(item.vid)}>
                                         <Image src={item.img} width="250" height="auto" alt={item.alt}/>
@@ -47,6 +53,26 @@ class Sunsets extends Component {
                             )}
                         </div>
                     </Col>
+                    
+                </Row>
+                <Row>
+                    <Col md={12}>
+                        <h3 className="white">
+                            Past After Sunsets
+                        </h3>
+                        <p class="center white">(Click to View Video)</p>
+                        <div className="flex-container">
+                            {afterSunset.map((item,i) => 
+                                <div className="item sunset" key={i}>
+                                    <a className="sunSet dark" onClick={() => this.handleSunsetClick(item.vid)}>
+                                        <Image src={item.img} width="250" height="auto" alt={item.alt}/>
+                                        <p className="dark whiteBg text-center">{`${item.desc} - ${item.date}`}</p>
+                                    </a>
+                                </div>
+                            )}
+                        </div>
+                    </Col>
+                    
                 </Row>
             </>
         )

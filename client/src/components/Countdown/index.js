@@ -4,7 +4,7 @@ import Countdown from 'react-countdown';
 const CountdownTimer =  () => {
     return (
         <div className="countdownTimer">
-            <Countdown date={"2020-05-15T18:30:00"} />
+            <Countdown date={"2020-05-22T18:30:00"} />
         </div>
     )
 }

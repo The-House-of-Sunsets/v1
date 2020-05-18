@@ -51,8 +51,8 @@ class Home extends Component {
                                 <strong>Next Sunset:</strong></h4>
                             <CountdownTimer />
                             <Header 
-                                text="Flip Mode"
-                                subtext="Friday, May 15  at 630pm til Dark" 
+                                text="Special Guests! (TBA)"
+                                subtext="Friday, May 15 at 630pm til Dark" 
                                 image>
                             </Header>
                         </Col>

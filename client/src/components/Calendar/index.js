@@ -8,13 +8,13 @@ const Calendar = () => {
                 <div id="eventList" className="container">
                     <div className="lineup">
                         <div className="dateName">Friday</div>
-                        <div className="date">05/15/20</div>
-                        <div className="artist">Flip Mode</div>
+                        <div className="date">05/22/20</div>
+                        <div className="artist">Special Guests! (TBA)</div>
                     </div>
                     <div className="lineup">
                         <div className="dateName">Saturday</div>
-                        <div className="date">05/16/20</div>
-                        <div className="artist">Miguel Rios</div>
+                        <div className="date">05/23/20</div>
+                        <div className="artist">Sean til Dawn and El</div>
                     </div>
                 </div>
             </div>

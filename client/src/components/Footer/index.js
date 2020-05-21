@@ -8,7 +8,7 @@ const Footer = () => {
             <Container>
                 <Row>
                     <Col md={12} className="mt-3">
-                        <span className="branding">House of Sunsets&trade;</span>
+                        <span className="branding">House of Sunsets&trade;2020 | <a href="mailto:thehouseofsunsets@gmail.com">thehouseofsunsets@gmail.com</a></span>
                     </Col>
                     {/*<Col md={3}>
                         <div className="inline text-md-right">

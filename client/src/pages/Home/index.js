@@ -51,7 +51,7 @@ class Home extends Component {
                                 <strong>Next Sunset:</strong></h4>
                             <CountdownTimer />
                             <Header 
-                                text="Special Guests! (TBA)"
+                                text="DJ 1979 &amp; JBlaze"
                                 subtext="Friday, May 15 at 630pm til Dark" 
                                 image>
                             </Header>

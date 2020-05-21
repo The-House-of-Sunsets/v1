@@ -13,38 +13,36 @@ class Index extends Component {
     constructor() {
         super()
         this.state = {
-          links: [{
-            "link":"#sun-sets",
-            "name":"Sun Sets"
+          links: []
+        //   {
+        //     "link":"#sun-sets",
+        //     "name":"Sun Sets"
 
-        },{
-            "link":"#artists",
-            "name":"Artists"
+        // },{
+        //     "link":"#artists",
+        //     "name":"Artists"
 
-        }]
+        // }]
         }
     }
     componentDidMount() {
-        // this.getLinks()
+        this.getLinks()
         
-        // .then(res => {JSON.stringify(res)
-        //     console.log(res)
-        //     this.setState({links: res})})
-        // .catch(err => console.log(err))
+        .then(res => {JSON.stringify(res)
+            console.log(res)
+            this.setState({links: res})})
+        .catch(err => console.log(err))
     }
-    getLinks = () => {
-        
-    }
-    // async getLinks() {
-    //     const response =  await fetch("/api/v1_0/links")
-    //     const body = await response.json();
-    //     if(response.status !== 200) {
-    //         throw Error(body.message)
-    //     }
-    //     console.log("I have links",body)
-    //     return body;
+    async getLinks() {
+        const response =  await fetch("/api/v1_0/links")
+        const body = await response.json();
+        if(response.status !== 200) {
+            throw Error(body.message)
+        }
+        console.log("I have links",body)
+        return body;
 
-    // }
+    }
     render() {
         let data = this.state.links
         let style = {
@@ -60,8 +58,8 @@ class Index extends Component {
                         <main id="mainContent">
                             <Home />
                         </main>
-                        {/* <Navigation links={data} /> 
-                        <DonateBtn /> */}
+                        <Navigation links={data} /> 
+                        {/* <DonateBtn /> */}
                     </Container>
                     <footer>
                         <Footer/>

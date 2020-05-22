@@ -1,12 +1,12 @@
 import React, {Component} from 'react'
 import {Col, Row} from 'reactstrap'
 //pages
-import Artists from '../../pages/Artists'
+import Artists from '../Artists'
 //components
 import Header from '../../components/Header'
 // import VideoPlayer from '../../components/VideoPlayer'
 import Image from '../../components/Image'
-import Sunsets from '../../pages/SunSets'
+import Sunsets from '../SunSets'
 //images
 import hosLogo from './house-of-sunsets-logo.png'
 import CountdownTimer from '../../components/Countdown'

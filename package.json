@@ -1,7 +1,7 @@
 {
   "name": "thehouseofsunsets",
   "version": "0.0.1",
-  "homepage": "http://thehouseofsunsets.com",
+  "homepage": "https://houseofsunsets.herokuapp.com",
   "private": true,
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",

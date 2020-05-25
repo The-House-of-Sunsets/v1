@@ -14,7 +14,7 @@ const Calendar = () => {
                     <div className="lineup">
                         <div className="dateName">Saturday</div>
                         <div className="date">05/23/20</div>
-                        <div className="artist">KillSean and El</div>
+                        <div className="artist">Villalobos</div>
                     </div>
                 </div>
             </div>

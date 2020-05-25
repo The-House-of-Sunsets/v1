@@ -20,7 +20,7 @@ class Sunsets extends Component {
     }
     
     render() {
-        let goingLive = false;
+        let goingLive = true;
         let afterSunset = artists.filter((item,i) => !item.sunset)
         let sunsets = artists.filter((item,i) => item.sunset)
         return (
